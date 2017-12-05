@@ -1,0 +1,50 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body,html{position:relative;height:100%}
+body{margin:0;padding:0;background:#eee;color:#000;font-size:14px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}
+.swiper-container{margin-right:auto;margin-left:auto;width:100%;height:100%}
+.slide1{position:relative;padding:0 .3rem;background:url(../img/slideBg.jpg) no-repeat;background-size:cover}
+.slide1 .slide1Box{position:absolute;right:0;left:0;margin:auto;width:6rem}
+.slide1 .slide1-1{top:2.24rem}
+.slide1 .slide1Box img{width:100%}
+.slide1 .slide1-2{top:3.7rem}
+.slide1 .slide1-3{top:4.7rem}
+.slide1 .slide1-4{top:5.8rem}
+.slide1 .slide1-5{top:7.9rem;text-align:right}
+.slide1 .slide1-5 img{width:2.02rem;height:.87rem;animation:animation1 2s infinite;-moz-animation:animation1 2s infinite;-webkit-animation:animation1 2s infinite;-o-animation:animation1 2s infinite}
+@keyframes animation1{0%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+    100%{transform:scale(1)}
+}
+@-moz-keyframes animation1{0%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+    100%{transform:scale(1)}
+}
+@-webkit-keyframes animation1{0%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+    100%{transform:scale(1)}
+}
+@-o-keyframes animation1{0%{transform:scale(1)}
+    50%{transform:scale(1.2)}
+    100%{transform:scale(1)}
+}
+.music{width: 0.6rem;height: 0.6rem;border: 0.04rem solid #b31e23;border-radius: 50%;overflow: hidden;position: fixed;top: 0.3rem;right: 0.3rem;z-index: 999;-webkit-justify-content: center;
+    justify-content: center;-webkit-align-items: center;
+    align-items: center; display: flex;animation:rotate 3s infinite linear;-moz-animation:rotate 3s infinite linear;-webkit-animation:rotate 3s infinite linear;-o-animation:rotate 3s infinite linear}
+.music img{width: 60%}
+@keyframes rotate{
+    0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
+    100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
+}
+@-moz-keyframes rotate{
+    0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
+    100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
+}
+@-webkit-keyframes rotate{
+    0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
+    100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
+}
+@-o-keyframes rotate{
+    0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
+    100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
+}
+.music.pause{-webkit-animation: none;animation: none;opacity: 0.5}
