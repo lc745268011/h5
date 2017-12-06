@@ -6,6 +6,7 @@ var swiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 0,
+    //mousewheel: true
 });
 
 
@@ -36,5 +37,18 @@ function audio(obj) {
 }
 //跳转
 $('.slideTo').click(function(){
-    swiper.slideTo(2, 1000, false);//切换到第一个slide，速度为1秒
-})
+    swiper.slideTo(1, 1000, false);//切换到第一个slide，速度为1秒
+});
+//打字
+$(function () {
+    $('.text1').textillate({ in: { effect: 'rollIn' } });
+    $('.text2').textillate({
+        initialDelay: 1000, 	//设置动画开始时间
+        in: { effect: 'flipInX'	//设置动画名称
+        }
+    });
+    $('.text3').textillate({
+        initialDelay: 9000,
+        in: { effect: 'bounceInDown' }
+    });
+});
