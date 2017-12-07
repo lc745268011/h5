@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     imageMin = require('gulp-imagemin');
 //压缩JS  
 gulp.task('minifyjs', function() {
-    return gulp.src(['./res/js/*.js'])  //选择合并的JS
+    return gulp.src(['./res/js/index.js'])  //选择合并的JS
         .pipe(concat('main.js'))   //合并js
         .pipe(gulp.dest('./dist/js'))         //输出
         .pipe(rename({suffix:'.min'}))     //重命名

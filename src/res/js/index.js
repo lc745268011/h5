@@ -30,17 +30,17 @@ var mySwiper = new Swiper('.swiper-container', {
 });
 //rem
 (function (doc, win) {
-        var docEl = doc.documentElement,
-            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-            recalc = function () {
-                var clientWidth = docEl.clientWidth;
-                if (!clientWidth) return;
-                docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
-            };
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-    })(document, window);
+    var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+        };
+    if (!doc.addEventListener) return;
+    win.addEventListener(resizeEvt, recalc, false);
+    doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
 //music
 function audio(obj) {
     var m = document.getElementById("myAudio");
@@ -52,6 +52,13 @@ function audio(obj) {
         m.pause();
     }
 }
+//一般情况下，这样就可以自动播放了，但是一些奇葩iPhone机不可以
+document.getElementById('myAudio').play();
+//微信必须加入Weixin JSAPI的WeixinJSBridgeReady才能生效
+document.addEventListener("WeixinJSBridgeReady", function () {
+    document.getElementById('myAudio').play();
+    document.getElementById('audio').play(); //视频自动播放
+}, false);
 //跳转
 $('.slideTo').click(function () {
     mySwiper.slideTo(1, 1000, true)
