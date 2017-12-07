@@ -93,7 +93,7 @@ ul,li{list-style: none}
 .slide4 .slide4-1{top: 4.8rem;width:3.5rem;position: absolute;}
 .slide5 .slide5-1{top: 4rem}
 .slide5 .slide4-2.title{top: 1.8rem}
-.slide5 .slide5-1 .l{width: 2.8rem;margin-right: 0.4rem;margin-bottom: 0.4rem}
+.slide5 .slide5-1 .l{width: 2.8rem;margin-right: 0.4rem;margin-bottom: 0.6rem}
 .slide5 .slide5-1 .l:nth-child(2n){margin-right: 0}
 .slide6>img{width: 70%;margin: auto;position: absolute;left: 0;right: 0;top: 2.5rem;}
 .slide6 .con .list .r {font-size: 0.28rem;background: #f0eaec;padding: 0.1rem 0.3rem;}

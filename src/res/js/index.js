@@ -2,14 +2,22 @@
  * Created by xycx on 2017/12/5.
  */
 //swiper
-var swiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container', {
     direction: 'vertical',
     slidesPerView: 1,
     spaceBetween: 0,
     //mousewheel: true
+    /* 初始化animate */
+    on:{
+        init: function(){
+            swiperAnimateCache(this); //隐藏动画元素
+            swiperAnimate(this); //初始化完成开始动画
+        },
+        slideChangeTransitionEnd: function(){
+            swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+        }
+    }
 });
-
-
 //rem
 (function (doc, win) {
         var docEl = doc.documentElement,
@@ -37,7 +45,7 @@ function audio(obj) {
 }
 //跳转
 $('.slideTo').click(function(){
-    swiper.slideTo(1, 1000, false);//切换到第一个slide，速度为1秒
+    mySwiper.slideTo(1, 1000, false);//切换到第一个slide，速度为1秒
 });
 //打字
 $(function () {
@@ -52,3 +60,4 @@ $(function () {
         in: { effect: 'bounceInDown' }
     });
 });
+//当前页动画
