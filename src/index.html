@@ -27,7 +27,10 @@
         document.getElementById('loading').style.height=h+'px';
     </script>
 </div>
-<div class="swiper-container" id="h5Content">
+<div id="h5Content">
+
+</div>
+<div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide1 swiper-no-swiping">
             <div class="slide1-1 slide1Box ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.5s"
@@ -267,9 +270,8 @@
         </div>
         <div class="swiper-slide slide3 slide8">
             <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s"
-                 swiper-animate-delay="0.5s">祝我们的祖国繁荣昌盛
+                 swiper-animate-delay="0.5s">祝我们的祖国繁荣昌盛！
             </div>
-            ！
             <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s"
                  swiper-animate-delay="1s">感谢您的收看
             </div>
@@ -282,6 +284,19 @@
 <audio loop="" autoplay="" preload="auto" id="myAudio">
     <source src="../src/res/audio/bgmusic.mp3" type="audio/mpeg">
 </audio>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState == "complete") {
+            document.getElementById('loading').style.display = "none";
+            document.getElementById('h5Content').style.display = "block";
+            document.getElementById('music').style.display = "flex";
+        } else {
+            document.getElementById('loading').style.display = "flex";
+            document.getElementById('h5Content').style.display = "none";
+            document.getElementById('music').style.display = "none";
+        };
+    };
+</script>
 <script src="../src/res/js/jquery-1.10.2.min.js"></script>
 <script src="../src/res/js/swiper.min.js"></script>
 <script src="../src/res/js/swiper.animate1.0.2.min.js"></script>

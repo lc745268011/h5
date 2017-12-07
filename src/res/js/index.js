@@ -1,17 +1,6 @@
 /**
  * Created by xycx on 2017/12/5.
  */
-document.onreadystatechange = function () {
-    if (document.readyState == "complete") {
-        document.getElementById('loading').style.display = "none";
-        document.getElementById('h5Content').style.display = "block";
-        document.getElementById('music').style.display = "flex";
-    } else {
-        document.getElementById('loading').style.display = "flex";
-        document.getElementById('h5Content').style.display = "none";
-        document.getElementById('music').style.display = "none";
-    };
-};
 
 //swiper
 var mySwiper = new Swiper('.swiper-container', {
@@ -72,4 +61,3 @@ $(function () {
         in: { effect: 'bounceInDown' }
     });
 });
-//当前页动画
