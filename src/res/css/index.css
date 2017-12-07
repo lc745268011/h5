@@ -97,9 +97,10 @@ ul,li{list-style: none}
 .slide5 .slide5-1 .l:nth-child(2n){margin-right: 0}
 .slide6>img{width: 70%;margin: auto;position: absolute;left: 0;right: 0;top: 2.5rem;}
 .slide3 .con .list .r {/*font-size: 0.28rem;*/background: #f0eaec;padding: 0.1rem 0.3rem;}
-.slide6 .con .list .r {font-size: 0.28rem;}
+.slide6 .con .list .r,.slide7 .con .list .r{font-size: 0.28rem;}
 .slide6 .con .list{margin-bottom: 0.3rem}
 .slide7 .con .list .l{width: 2rem}
 .slide8 div:first-child{font-size: 0.6rem;top: 5rem;text-align: center}
 .slide8 div:last-child{font-size: 0.5rem;top: 6rem;text-align: center}
+.slide8 .slide1Box{width: 7rem}
 #h5Content,#music{display: none}
