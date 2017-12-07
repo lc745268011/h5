@@ -9,16 +9,35 @@
     <title>学习十九大精神</title>
     <link rel="stylesheet" href="../src/res/css/swiper.min.css">
     <link rel="stylesheet" href="../src/res/css/animate.css">
+    <link rel="stylesheet" href="../src/res/css/demo.css">
+    <link rel="stylesheet" href="../src/res/css/loaders.css">
     <link rel="stylesheet" href="../src/res/css/index.css">
 </head>
 <body>
-<div class="swiper-container">
+<div class="loader" style="width: 100%;display: flex;-webkit-align-items: center;align-items: center; -webkit-justify-content: center;justify-content: center;background: #ed5565;" id="loading">
+    <div class="loader-inner pacman">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <script>
+        var h = document.documentElement.clientHeight;
+        document.getElementById('loading').style.height=h+'px';
+    </script>
+</div>
+<div class="swiper-container" id="h5Content">
     <div class="swiper-wrapper">
         <div class="swiper-slide slide1 swiper-no-swiping">
-            <div class="slide1-1 slide1Box ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.2s"><img src="../src/res/img/slide-1.png" alt=""/></div>
-            <div class="slide1-2 slide1Box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><img src="../src/res/img/slide-2.png" alt=""/></div>
-            <div class="slide1-3 slide1Box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><img src="../src/res/img/slide-3.png" alt=""/></div>
-            <div class="slide1-4 slide1Box ani" swiper-animate-effect="flipInY" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s"><img src="../src/res/img/slide-4.png" alt=""/></div>
+            <div class="slide1-1 slide1Box ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.2s"><img src="../src/res/img/slide-1.png" alt=""/></div>
+            <div class="slide1-2 slide1Box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.5s"><img src="../src/res/img/slide-2.png" alt=""/></div>
+            <div class="slide1-3 slide1Box ani" swiper-animate-effect="fadeIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.8s"><img src="../src/res/img/slide-3.png" alt=""/></div>
+            <div class="slide1-4 slide1Box ani" swiper-animate-effect="flipInY" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.8s"><img src="../src/res/img/slide-4.png" alt=""/></div>
             <div class="slide1-5 slide1Box slideTo"><img src="../src/res/img/slide-5.png" alt=""/></div>
         </div>
         <div class="swiper-slide slide2">
@@ -31,26 +50,33 @@
             </div>
         </div>
         <div class="swiper-slide slide3">
-            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s">十个方面历史性成就</div>
+            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s"
+                 swiper-animate-delay="0.3s">十个方面历史性成就
+            </div>
             <div class="slide2-2 slide1Box con">
                 <ul>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="0.8s">
                         <div class="xh l">1</div>
                         <div class="r">经济建设取得重大成就</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.2s">
                         <div class="xh l">2</div>
                         <div class="r">全面深化改革取得重大突破</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.6s">
                         <div class="xh l">3</div>
                         <div class="r">民主法制建设迈出重大步伐</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2s">
                         <div class="xh l">4</div>
                         <div class="r">思想文化建设取得重大进展</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2.4s">
                         <div class="xh l">5</div>
                         <div class="r">人民生活不断改善</div>
                     </li>
@@ -61,26 +87,33 @@
             </div>
         </div>
         <div class="swiper-slide slide3">
-            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s">十个方面历史性成就</div>
+            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s"
+                 swiper-animate-delay="0.3s">十个方面历史性成就
+            </div>
             <div class="slide2-2 slide1Box con">
                 <ul>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="0.8s">
                         <div class="xh l">6</div>
                         <div class="r">生态文明建设成效显著</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.2s">
                         <div class="xh l">7</div>
                         <div class="r">强军新军开创新局面</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.6s">
                         <div class="xh l">8</div>
                         <div class="r">港澳台工作取得新进展</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2s">
                         <div class="xh l">9</div>
                         <div class="r">全方位外交布局深入展开</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2.4s">
                         <div class="xh l">10</div>
                         <div class="r">全面从严治党成效显著</div>
                     </li>
@@ -91,10 +124,12 @@
             </div>
         </div>
         <div class="swiper-slide slide4">
-            <div class="slide4-2 slide1Box title ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <div class="slide4-2 slide1Box title ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.5s">
                 <img src="../src/res/img/slide4-1.png" alt="" class="name"/>
             </div>
-            <div class="slide4-1 slide1Box ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">
+            <div class="slide4-1 slide1Box ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="1s">
                 <img src="../src/res/img/slide4-2.png" alt="" class="name"/>
             </div>
             <div class="next">
@@ -102,14 +137,19 @@
             </div>
         </div>
         <div class="swiper-slide slide4 slide5">
-            <div class="slide4-2 slide1Box title ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">
+            <div class="slide4-2 slide1Box title ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.5s">
                 <img src="../src/res/img/slide5-1.png" alt="" class="name"/>
             </div>
             <div class="slide5-1 slide1Box cl">
-                <img src="../src/res/img/one.png" alt="" class="l ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s"/>
-                <img src="../src/res/img/two.png" alt="" class="l ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="1.8s"/>
-                <img src="../src/res/img/three.png" alt="" class="l ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="2.6s"/>
-                <img src="../src/res/img/four.png" alt="" class="l ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="3.4s"/>
+                <img src="../src/res/img/one.png" alt="" class="l ani" swiper-animate-effect="zoomIn"
+                     swiper-animate-duration="0.5s" swiper-animate-delay="1s"/>
+                <img src="../src/res/img/two.png" alt="" class="l ani" swiper-animate-effect="zoomIn"
+                     swiper-animate-duration="0.5s" swiper-animate-delay="1.8s"/>
+                <img src="../src/res/img/three.png" alt="" class="l ani" swiper-animate-effect="zoomIn"
+                     swiper-animate-duration="0.5s" swiper-animate-delay="2.6s"/>
+                <img src="../src/res/img/four.png" alt="" class="l ani" swiper-animate-effect="zoomIn"
+                     swiper-animate-duration="0.5s" swiper-animate-delay="3.4s"/>
             </div>
             <div class="next">
                 <img src="../src/res/img/next.png" alt=""/>
@@ -117,57 +157,73 @@
         </div>
         <div class="swiper-slide slide3 slide6">
             <!--<div class="slide2-1 slide1Box title">重大思想</div>-->
-            <img src="../src/res/img/slide6-1.png" alt="" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s"/>
+            <img src="../src/res/img/slide6-1.png" alt="" class="ani" swiper-animate-effect="fadeInUp"
+                 swiper-animate-duration="0.2s" swiper-animate-delay="0.3s"/>
+
             <div class="slide2-2 slide1Box con">
                 <ul>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="0.8s">
                         <div class="xh l">1</div>
                         <div class="r">是 对马克思列宁主义、毛泽东思想、邓小平理论、“三个代表”重要思想、科学发展观的继承和发展</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.2s">
                         <div class="xh l">2</div>
                         <div class="r">是 马克思主义中国化最新成果</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.6s">
                         <div class="xh l">3</div>
                         <div class="r">是 党和人民实践经验和集体智慧的结晶</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2s">
                         <div class="xh l">4</div>
                         <div class="r">是 中国特色社会主义理论体系的重要组成部分</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2.4s">
                         <div class="xh l">5</div>
                         <div class="r">是 全党全中国人民为实现中华民族伟大复兴而奋斗的行动指南</div>
                     </li>
                 </ul>
             </div>
-            <img src="../src/res/img/slide6-2.png" alt="" style="top: 10rem" class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="3s"/>
+            <img src="../src/res/img/slide6-2.png" alt="" style="top: 10rem" class="ani" swiper-animate-effect="zoomIn"
+                 swiper-animate-duration="0.5s" swiper-animate-delay="3s"/>
+
             <div class="next">
                 <img src="../src/res/img/next.png" alt=""/>
             </div>
         </div>
         <div class="swiper-slide slide3 slide7">
-            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s">九个方面</div>
+            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s"
+                 swiper-animate-delay="0.3s">九个方面
+            </div>
             <div class="slide2-2 slide1Box con">
                 <ul>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="0.8s">
                         <div class="l">经济方面</div>
                         <div class="r">贯彻新发展理念，建设现代化经济体系</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.2s">
                         <div class="l">政治方面</div>
                         <div class="r">健全人民当家作主制度体系，发展社会主义民主政治</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.6s">
                         <div class="l">文化方面</div>
                         <div class="r">坚定文化自信，推动社会主义文化繁荣兴盛</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2s">
                         <div class="l">社会方面</div>
                         <div class="r">提高保障和改善民生水平，加强和创新社会治理</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2.4s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2.4s">
                         <div class="l">生态方面</div>
                         <div class="r">加快生态文明体制改革，建设美丽中国</div>
                     </li>
@@ -178,22 +234,28 @@
             </div>
         </div>
         <div class="swiper-slide slide3 slide7">
-            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s" swiper-animate-delay="0.3s">九个方面</div>
+            <div class="slide2-1 slide1Box title ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.2s"
+                 swiper-animate-delay="0.3s">九个方面
+            </div>
             <div class="slide2-2 slide1Box con">
                 <ul>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="0.8s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="0.8s">
                         <div class="l">国防和军队方面</div>
                         <div class="r">坚持走中国特色强军之路，全面推进国防和军队现代化</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.2s">
                         <div class="l">“一国两制”和祖国统一方面</div>
                         <div class="r">坚持“一国两制”，推进祖国统一</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="1.6s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="1.6s">
                         <div class="l">外交方面</div>
                         <div class="r">坚持和平发展道路，推动构建人类命运共同体</div>
                     </li>
-                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s" swiper-animate-delay="2s">
+                    <li class="list cl ani" swiper-animate-effect="flipInX" swiper-animate-duration="0.5s"
+                        swiper-animate-delay="2s">
                         <div class="l">党建方面</div>
                         <div class="r">坚定不移全面从严治党，不断提高党的执政能力和领导水平</div>
                     </li>
@@ -204,12 +266,17 @@
             </div>
         </div>
         <div class="swiper-slide slide3 slide8">
-            <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">祝我们的祖国繁荣昌盛</div>！
-            <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="1s">感谢您的收看</div>
+            <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="0.5s">祝我们的祖国繁荣昌盛
+            </div>
+            ！
+            <div class="slide1Box ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s"
+                 swiper-animate-delay="1s">感谢您的收看
+            </div>
         </div>
     </div>
 </div>
-<div class="music" onclick="audio(this)">
+<div class="music" onclick="audio(this)" id="music">
     <img src="../src/res/img/music.png" alt=""/>
 </div>
 <audio loop="" autoplay="" preload="auto" id="myAudio">
