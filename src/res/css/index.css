@@ -39,21 +39,21 @@ ul,li{list-style: none}
 }
 .music{width: 0.6rem;height: 0.6rem;border: 0.04rem solid #b31e23;border-radius: 50%;overflow: hidden;position: fixed;top: 0.3rem;right: 0.3rem;z-index: 999;-webkit-justify-content: center;
     justify-content: center;-webkit-align-items: center;
-    align-items: center; display: flex;animation:rotate 3s infinite linear;-moz-animation:rotate 3s infinite linear;-webkit-animation:rotate 3s infinite linear;-o-animation:rotate 3s infinite linear}
+    align-items: center; display: flex;animation:rotateMusic 3s infinite linear;-moz-animation:rotateMusic 3s infinite linear;-webkit-animation:rotateMusic 3s infinite linear;-o-animation:rotateMusic 3s infinite linear}
 .music img{width: 60%}
-@keyframes rotate{
+@keyframes rotateMusic{
     0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
     100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
 }
-@-moz-keyframes rotate{
+@-moz-keyframes rotateMusic{
     0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
     100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
 }
-@-webkit-keyframes rotate{
+@-webkit-keyframes rotateMusic{
     0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
     100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
 }
-@-o-keyframes rotate{
+@-o-keyframes rotateMusic{
     0%{transform:rotate(0deg);-webkit-transform: rotate(0deg);}
     100%{transform:rotate(360deg);-webkit-transform:rotate(360deg)}
 }
@@ -81,10 +81,10 @@ ul,li{list-style: none}
     50% {transform: translatey(10px);}
     100% {transform: translatey(0);}
 }
-.swiper-slide .slide1Box.title{top: 2.3rem;width: 6rem;background: url("../img/slide1-2.png") no-repeat;background-size: 100% 100%;height: 0.8rem;text-align: center;line-height: 0.8rem;font-size: 0.48rem;color: #fff}
-.swiper-slide .slide1Box.con{top: 3.8rem;width:7rem}
+.swiper-slide .slide1Box.title{top: 2.2rem;width: 6rem;background: url("../img/slide1-2.png") no-repeat;background-size: 100% 100%;height: 0.8rem;text-align: center;line-height: 0.8rem;font-size: 0.48rem;color: #fff}
+.swiper-slide .slide1Box.con{top: 3.5rem;width:7rem}
 .slide3 .con .xh{width: 0.8rem;height: 0.8rem;background: url(../img/list.png) no-repeat;background-size: 100% 100%;text-align: center;line-height: 0.8rem;font-size: 0.32rem;color: #ba090a;font-family: Arial;font-weight: bold;}
-.slide3 .con .list{margin-bottom: 0.5rem;-webkit-align-items: center;align-items: center;
+.slide3 .con .list{margin-bottom: 0.3rem;-webkit-align-items: center;align-items: center;
     display: flex;}
 .slide3 .con .list .r{width: 4.8rem;color: #ba090a;font-size: 0.36rem;margin-left: 0.4rem}
 .slide3 .slide1Box.con{width: 6rem}

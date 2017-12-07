@@ -50,14 +50,9 @@ $('.slideTo').click(function(){
 });
 //打字
 $(function () {
-    $('.text1').textillate({ in: { effect: 'rollIn' } });
     $('.text2').textillate({
         initialDelay: 1000, 	//设置动画开始时间
         in: { effect: 'flipInX'	//设置动画名称
         }
-    });
-    $('.text3').textillate({
-        initialDelay: 9000,
-        in: { effect: 'bounceInDown' }
     });
 });
