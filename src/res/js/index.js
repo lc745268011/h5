@@ -9,13 +9,22 @@ var mySwiper = new Swiper('.swiper-container', {
     spaceBetween: 0,
     //mousewheel: true
     /* 初始化animate */
-    on:{
-        init: function(){
+    on: {
+        init: function () {
             swiperAnimateCache(this); //隐藏动画元素
             swiperAnimate(this); //初始化完成开始动画
         },
-        slideChangeTransitionEnd: function(){
+        slideChangeTransitionEnd: function () {
             swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+            if (this.activeIndex == 1) {
+                $('.text2').textillate('start');
+                $('.text2').textillate({
+                    initialDelay: 1000, 	//设置动画开始时间
+                    in: {
+                        effect: 'flipInX'	//设置动画名称
+                    }
+                });
+            }
         }
     }
 });
@@ -31,8 +40,7 @@ var mySwiper = new Swiper('.swiper-container', {
         if (!doc.addEventListener) return;
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
-    }
-)(document, window);
+    })(document, window);
 //music
 function audio(obj) {
     var m = document.getElementById("myAudio");
@@ -45,14 +53,14 @@ function audio(obj) {
     }
 }
 //跳转
-$('.slideTo').click(function(){
-    mySwiper.slideTo(1, 1000, false);//切换到第一个slide，速度为1秒
+$('.slideTo').click(function () {
+    mySwiper.slideTo(1, 1000, true)
 });
 //打字
-$(function () {
-    $('.text2').textillate({
-        initialDelay: 1000, 	//设置动画开始时间
-        in: { effect: 'flipInX'	//设置动画名称
-        }
-    });
-});
+//$(function () {
+//    $('.text2').textillate({
+//        initialDelay: 1000, 	//设置动画开始时间
+//        in: { effect: 'flipInX'	//设置动画名称
+//        }
+//    });
+//});
