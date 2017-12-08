@@ -1,33 +1,38 @@
 /**
  * Created by xycx on 2017/12/5.
  */
-
-//swiper
-var mySwiper = new Swiper('.swiper-container', {
-    direction: 'vertical',
-    slidesPerView: 1,
-    spaceBetween: 0,
-    //mousewheel: true
-    /* 初始化animate */
-    on: {
-        init: function () {
-            swiperAnimateCache(this); //隐藏动画元素
-            swiperAnimate(this); //初始化完成开始动画
-        },
-        slideChangeTransitionEnd: function () {
-            swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-            if (this.activeIndex == 1) {
-                $('.text2').textillate('start');
-                $('.text2').textillate({
-                    initialDelay: 1000, 	//设置动画开始时间
-                    in: {
-                        effect: 'flipInX'	//设置动画名称
-                    }
-                });
+window.onload = function() {
+    //swiper
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        //mousewheel: true
+        /* 初始化animate */
+        on: {
+            init: function () {
+                swiperAnimateCache(this); //隐藏动画元素
+                swiperAnimate(this); //初始化完成开始动画
+            },
+            slideChangeTransitionEnd: function () {
+                swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+                if (this.activeIndex == 1) {
+                    $('.text2').textillate('start');
+                    $('.text2').textillate({
+                        initialDelay: 1000, 	//设置动画开始时间
+                        in: {
+                            effect: 'flipInX'	//设置动画名称
+                        }
+                    });
+                }
             }
         }
-    }
-});
+    });
+    //跳转
+    $('.slideTo').click(function () {
+        mySwiper.slideTo(1, 1000, true)
+    });
+};
 //rem
 (function (doc, win) {
     var docEl = doc.documentElement,
@@ -59,10 +64,7 @@ document.addEventListener("WeixinJSBridgeReady", function () {
     document.getElementById('myAudio').play();
     document.getElementById('audio').play(); //视频自动播放
 }, false);
-//跳转
-$('.slideTo').click(function () {
-    mySwiper.slideTo(1, 1000, true)
-});
+
 //打字
 //$(function () {
 //    $('.text2').textillate({
